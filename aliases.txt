@@ -1,6 +1,10 @@
 # for fetching up ip address (inet)
 inet=$(ip a s eno2 | awk -F"[/ ]+" '/inet / {print $3}')  
 
+# to cache the passphrase for our session, makes it convenient than typing the passphrase everytime
+ssha='eval $(ssh-agent) && ssh-add'
 
+# git primary commit commands (add, commit, push)
+git_='git add -A;git commit -m "ff"; git push origin main'
 
 
