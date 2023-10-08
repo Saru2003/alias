@@ -1,0 +1,16 @@
+ 4072  wpa_passphrase
+ 4073  iwconfig wlo1 up
+ 4074  sudo ifconfig wlan0 up\n
+ 4075  sudo ifconfig wlo1 up\n
+ 4076  sudo iwlist scan 
+ 4077  sudo iwlist wlo1 scan 
+ 4078  whatis iwlist
+ 4079  sudo iwlist wlo1 essid 'vivo Y51A' key s:'76@manis'
+ 4080  sudo iwlist wlo1 ESSID 'vivo Y51A' key s:'76@manis'
+ 4081  iwlist --help
+ 4082  whatis dhclient
+ 4083  sudo dhclient wlo1
+ 4084  nmcli dev wifi connect 'vivo Y51A' password '76@manis'\n\n
+ 4085  ls
+ 4086  nmcli con down
+ 4087  nmcli con down vivo\ Y51A
