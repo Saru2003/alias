@@ -12,3 +12,6 @@ spot='env LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify %U &> /dev/null'
 
 # to kill all running docker containers
 dock_kill='docker kill $(docker ps -q)'
+
+# top ten cpu consuming processes
+mem='ps -auxf | sort -nr -k 4 | head -10'
